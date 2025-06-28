@@ -3,7 +3,7 @@ import { FaBriefcase } from 'react-icons/fa';
 
 const Education = () => {
     return (
-        <div id='education' className='lg:p-10 flex flex-col'>
+        <div id='education' className='p-5 lg:p-10 flex flex-col'>
             <span data-aos="fade-up" data-aos-easing="ease" duration="5000" className="btn btn-outline btn-sm mb-4 rounded-3xl group hover:border-primary w-fit px-5">
                 <FaBriefcase size={15} className='group-hover:text-primary'/>
                 <span>Education</span>
@@ -35,7 +35,7 @@ const Education = () => {
                         </div>
                         <hr />
                     </li>
-                    <li data-aos="fade-left" data-aos-easing="ease" duration="5000" className='group'>
+                    {/* <li data-aos="fade-left" data-aos-easing="ease" duration="5000" className='group'>
                         <hr />
                         <div className="timeline-middle group-hover:text-primary">
                         <svg
@@ -57,7 +57,7 @@ const Education = () => {
                         <p className='text-gray-400'>Completed Secondary School Certificate (SSC) in science department, achieving an excellent GPA of 4.89 out of 5.00. This academic phase laid the groundwork for my analytical thinking and nurtured my curiosity in technology and logical problem-solving. My achievements reflect a strong commitment to learning and an early inclination toward the IT field.</p>
                         </div>
                         <hr />
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         </div>

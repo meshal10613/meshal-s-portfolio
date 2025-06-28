@@ -7,7 +7,6 @@ import MongoDB from '../assets/skills/mongodb.png';
 import Firebase from '../assets/skills/firebase.png';
 
 const Skills = () => {
-
     const skillsData = [
         {
             id: 1,
@@ -37,11 +36,13 @@ const Skills = () => {
     ];
 
     return (
-        <div id='skills' className='lg:p-10 flex flex-col'>
+        <div id='skills' className='p-5 lg:p-10 flex flex-col'>
             <span data-aos="fade-up" data-aos-easing="ease" duration="5000" className="btn btn-outline btn-sm mb-4 rounded-3xl group hover:border-primary w-fit px-5">
                 <TbIcons size={15} className='group-hover:text-primary'/>
                 <span>My Skills</span>
             </span>
+
+            <h2 data-aos="fade-up" data-aos-easing="ease" duration="5000" className='text-4xl md:text-5xl mb-10'>My <span className='text-primary'>Advantages</span></h2>
 
             <section className=" text-white p-6 md:p-12">
                 <div data-aos="fade-up" data-aos-easing="ease" duration="5000" className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10">

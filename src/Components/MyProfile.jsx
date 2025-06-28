@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 
 const MyProfile = () => {
     return (
-        <div data-aos="fade-up" data-aos-easing="ease" duration="5000" className='w-98 border-2 border-[#3f3f3f] rounded-3xl mx-auto mt-10 lg:my-20 p-10'>
+        <div className='w-98 border-2 border-[#3f3f3f] rounded-3xl mx-auto mt-10 lg:my-20 p-10'>
             <div>
                 <div className='flex justify-between items-center'>
                     <Link to="/" className='w-40 cursor-pointer'><img src="/meshal-logo.png" alt="" className='w-40'/></Link>

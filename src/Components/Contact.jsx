@@ -59,7 +59,7 @@ const Contact = () => {
     };
 
     return (
-        <div id='contact' className='lg:p-10'>
+        <div id='contact' className='p-5 lg:p-10'>
             <span data-aos="fade-up" data-aos-easing="ease" duration="5000" className="btn btn-outline btn-sm mb-4 rounded-3xl group hover:border-primary w-fit px-5">
                 <SlEnvolope size={15} className='group-hover:text-primary'/>
                 <span>Contact</span>

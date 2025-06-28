@@ -1,0 +1,15 @@
+[
+    {
+        "id": 1,
+        "image": 
+        ["https://i.ibb.co/Psb2XgVK/hobby-hatch-1.png", "https://i.ibb.co/LXhcFKxf/hobby-hatch-2.png", "https://i.ibb.co/RTYJLM6h/hobby-hatch-3.png"],
+        "name": "Hobby Hatch",
+        "description": "HobbyHatch is a web platform designed to help individuals connect through shared interests by discovering, joining, or creating local hobby-based groups.",
+        "techStack": ["React", "Tailwind CSS", "MongoDB", "Firebase", "Express JS"],
+        "liveLink": "https://assignment-10-hobby-hatch.web.app/",
+        "githubClient": "https://github.com/meshal10613/hobby-hatch-client",
+        "githubServer": "https://github.com/meshal10613/hobby-hatch-server",
+        "challenge": ["Implementing theme", "To combine Front-end, Back-end & MongoDB"],
+        "futurePlans": "I will implement dashboard, Upgrade multi-user functionality, Integrate JWT"
+    }
+]
