@@ -1,25 +1,69 @@
 import React from 'react';
+// import CountUp from 'react-countup';
 import { IoHomeOutline } from 'react-icons/io5';
+import { Typewriter } from 'react-simple-typewriter';
 
 const Introduce = () => {
+
+    // const cards = [
+    //     {
+    //         id: 1,
+    //         title: 1,
+    //         description: "YEARS OF EXPERIENCE"
+    //     },
+    //     {
+    //         id: 2,
+    //         title: 10,
+    //         description: "PROJECTS COMPLETED", 
+    //     },
+    //     {
+    //         id: 3,
+    //         title: 20,
+    //         description: "HAPPY CLIENTS"
+    //     },
+    // ];
+    {/*ON 10 COUNTRIES*/}
+
     return (
-        <div id='home'>
-            <main className="lg:p-10 flex flex-col">
-                <div>
-                    <p className="btn btn-outline btn-sm mb-4 rounded-3xl group hover:border-primary">
-                        <IoHomeOutline size={15} className='group-hover:text-primary'/>
-                        <span>Home</span>
-                    </p>
-                    <h1 className="text-5xl md:text-7xl leading-tight">
-                        Hello! I'm <span className="text-primary">Syed Mohiuddin Meshal</span>,<br />
-                        MERN Stack Developer
-                    </h1>
-                    <p className="text-gray-400 mt-4 max-w-xl">
-                        I design and code beautifully simple things and I love what I do.
-                        <br /> Just simple like that!
-                    </p>
-                </div>
-            </main>
+        <div id='home' className='lg:p-10 flex flex-col'>
+            <div>
+                <p className="btn btn-outline btn-sm mb-4 rounded-3xl group hover:border-primary">
+                    <IoHomeOutline size={15} className='group-hover:text-primary'/>
+                    <span>Home</span>
+                </p>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight">
+                    Hello! I'm <span className="text-primary">Syed Mohiuddin Meshal</span>,<br />
+                    <span>
+                    {/* Style will be inherited from the parent element */}
+                    <Typewriter
+                        words={['Web Developer', 'MERN Stack Developer ', 'AI Developer']}
+                        loop={0}
+                        cursor
+                        cursorStyle='|'
+                        typeSpeed={70}
+                        deleteSpeed={50}
+                        delaySpeed={1000}
+                    />
+                    </span>
+                </h1>
+                <p className="text-gray-400 mt-4 max-w-xl">
+                    My goal is to bridge the gap between design and development with clean, scalable code.
+                </p>
+                <a href="#contact" className='btn border-2 border-[#25ef7c] text-xl text-black bg-[#25ef7c] transition-all hover:text-[#25ef7c] hover:border-[#25ef7c] hover:bg-[#1f1f1f] rounded-3xl h-10 w-40 my-5'>Let's Talk</a>
+
+                {/* <div className='flex justify-around items-center my-10 lg:my-20'>
+                    {
+                        cards.map((card) =>
+                        <div key={card.id} className='space-y-5'>
+                            <h2 className='text-6xl font-semibold text-primary'>
+                                <CountUp end={card.title} duration={5}/>+
+                            </h2>
+                            <p className='text-gray-400'>{card.description}</p>
+                        </div>
+                        )
+                    }
+                </div> */}
+            </div>
         </div>
     );
 };
