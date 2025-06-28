@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { NavLink, Outlet } from 'react-router';
+import React, { useState } from 'react';
+import { Outlet } from 'react-router';
 import MyProfile from '../Components/MyProfile';
 import { IoHomeOutline, IoMenu } from 'react-icons/io5';
 import { FaBriefcase} from 'react-icons/fa';
@@ -11,26 +11,24 @@ import { TbIcons } from 'react-icons/tb';
 const HomeLayout = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [activeSection, setActiveSection] = useState("home");
+    //     const sections = document.querySelectorAll("section.spy-section");
 
-    // Setup scroll spy
-    useEffect(() => {
-        const sections = document.querySelectorAll("section");
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        setActiveSection(entry.target.id);
-                    }
-                });
-            },
-            {
-                threshold: 0.6, // Trigger when 60% of the section is visible
-            }
-            );
+    //     const observer = new IntersectionObserver(
+    //         (entries) => {
+    //             entries.forEach((entry) => {
+    //                 if (entry.isIntersecting) {
+    //                     setActiveSection(entry.target.id);
+    //                 }
+    //             });
+    //         },
+    //         {
+    //             threshold: 0.6, // Trigger when 60% of the section is visible
+    //         }
+    //         );
 
-            sections.forEach((section) => observer.observe(section));
-            return () => sections.forEach((section) => observer.unobserve(section));
-    }, [activeSection]);
+    //         sections.forEach((section) => observer.observe(section));
+    //         return () => sections.forEach((section) => observer.unobserve(section));
+    // }, []);
 
     return (
         <div className='flex flex-col lg:flex-row items-center gap-10 justify-between mx-5'>
@@ -78,27 +76,27 @@ const HomeLayout = () => {
             
                             <div className="p-4 space-y-5">
                                 <a className={`${ activeSection === "home" ? "text-primary font-bold" : ""} flex items-center gap-2 group`} 
-                                href="#home" onClick={() => setIsOpen(false)}>
+                                href="#home" onClick={() => {setIsOpen(false); setActiveSection("home")}}>
                                     <IoHomeOutline size={20} className='group-hover:text-primary' />
                                     <span className='group-hover:text-white'>Home</span>
                                 </a>
-                                <a className={`${ activeSection === "about" ? "text-primary font-bold" : ""} flex items-center gap-2 group`} href="#about" onClick={() => setIsOpen(false)}>
+                                <a className={`${ activeSection === "about" ? "text-primary font-bold" : ""} flex items-center gap-2 group`} href="#about" onClick={() => {setIsOpen(false); setActiveSection("about")}}>
                                     <LuUserRound size={20} className='group-hover:text-primary'/>
                                     <span className='group-hover:text-white'>About</span>
                                 </a>
-                                <a className={`${ activeSection === "skills" ? "text-primary font-bold" : ""} flex items-center gap-2 group`} href="#skills" onClick={() => setIsOpen(false)}>
+                                <a className={`${ activeSection === "skills" ? "text-primary font-bold" : ""} flex items-center gap-2 group`} href="#skills" onClick={() => {setIsOpen(false); setActiveSection("skills")}}>
                                     <TbIcons size={20} className='group-hover:text-primary' />
                                     <span className='group-hover:text-white'>Skills</span>
                                 </a>
-                                <a className={`${ activeSection === "education" ? "text-primary font-bold" : ""} flex items-center gap-2 group`} href="#education" onClick={() => setIsOpen(false)}>
+                                <a className={`${ activeSection === "education" ? "text-primary font-bold" : ""} flex items-center gap-2 group`} href="#education" onClick={() => {setIsOpen(false), setActiveSection("education")}}>
                                     <FaBriefcase size={20} className='group-hover:text-primary'/>
                                     <span className='group-hover:text-white'>Education</span>
                                 </a>
-                                <a className={`${ activeSection === "projects" ? "text-primary font-bold" : ""} flex items-center gap-2 group`} href="#projects"onClick={() => setIsOpen(false)}>
+                                <a className={`${ activeSection === "projects" ? "text-primary font-bold" : ""} flex items-center gap-2 group`} href="#projects"onClick={() => {setIsOpen(false), setActiveSection("projects")}}>
                                     <GoProject size={20} className='group-hover:text-primary' />
                                     <span className='group-hover:text-white'>Projects</span>
                                 </a>
-                                <a className={`${ activeSection === "contact" ? "text-primary font-bold" : ""} flex items-center gap-2 group`} href="#contact"onClick={() => setIsOpen(false)}>
+                                <a className={`${ activeSection === "contact" ? "text-primary font-bold" : ""} flex items-center gap-2 group`} href="#contact" onClick={() => {setIsOpen(false); setActiveSection("contact")}}>
                                     <SlEnvolope size={20} className='group-hover:text-primary'/>
                                     <span className='group-hover:text-white'>Contact</span>
                                 </a>
@@ -108,22 +106,22 @@ const HomeLayout = () => {
                 </div>
                 <div className={`hidden ${isOpen ? "" : "lg:block"} fixed top-1/2 right-10 transform -translate-y-1/2 z-50 ${isOpen ? "hidden" : "fixed"}`}>
                     <div className=" border border-gray-600 rounded-full p-4 flex flex-col items-center space-y-6">
-                        <a href='#home' className="hover:text-primary transition-transform cursor-pointer tooltip tooltip-left" data-tip="Home">
+                        <a href='#home' onClick={() => setActiveSection("home")} className="hover:text-primary transition-transform cursor-pointer tooltip tooltip-left" data-tip="Home">
                             <IoHomeOutline size={20} className={`${ activeSection === "home" ? "text-primary" : ""}`}/>
                         </a>
-                        <a href='#about' className="hover:text-primary transition-transform cursor-pointer tooltip tooltip-left" data-tip="About">
+                        <a href='#about' onClick={() => setActiveSection("about")} className="hover:text-primary transition-transform cursor-pointer tooltip tooltip-left" data-tip="About">
                             <LuUserRound size={20} className={`${ activeSection === "about" ? "text-primary" : ""}`}/>
                         </a>
-                        <a href='#skills' className="hover:text-primary transition-transform cursor-pointer tooltip tooltip-left" data-tip="Skills">
+                        <a href='#skills' onClick={() => setActiveSection("skills")} className="hover:text-primary transition-transform cursor-pointer tooltip tooltip-left" data-tip="Skills">
                             <TbIcons size={20} className={`${ activeSection === "skills" ? "text-primary" : ""}`} />
                         </a>
-                        <a href='#education' className="hover:text-primary transition-transform cursor-pointer tooltip tooltip-left" data-tip="Education">
+                        <a href='#education' onClick={() => setActiveSection("education")} className="hover:text-primary transition-transform cursor-pointer tooltip tooltip-left" data-tip="Education">
                             <FaBriefcase size={20} className={`${ activeSection === "education" ? "text-primary" : ""}`} />
                         </a>
-                        <a href='#projects' className="hover:text-primary transition-transform cursor-pointer tooltip tooltip-left" data-tip="Projects">
+                        <a href='#projects' onClick={() => setActiveSection("projects")} className="hover:text-primary transition-transform cursor-pointer tooltip tooltip-left" data-tip="Projects">
                             <GoProject size={20} className={`${ activeSection === "projects" ? "text-primary" : ""}`} />
                         </a>
-                        <a href='#contact' className="hover:text-primary transition-transform cursor-pointer tooltip tooltip-left" data-tip="Contact">
+                        <a href='#contact' onClick={() => setActiveSection("contact")} className="hover:text-primary transition-transform cursor-pointer tooltip tooltip-left" data-tip="Contact">
                             <SlEnvolope size={20} className={`${ activeSection === "contact" ? "text-primary" : ""}`} />
                         </a>
                     </div>
