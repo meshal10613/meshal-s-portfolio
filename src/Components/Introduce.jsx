@@ -25,7 +25,7 @@ const Introduce = () => {
     {/*ON 10 COUNTRIES*/}
 
     return (
-        <div id='home' className='p-5 lg:p-10 flex flex-col'>
+        <section id='home' className='p-5 lg:p-10 flex flex-col'>
             <div>
                 <span data-aos="fade-up" data-aos-easing="ease" duration="5000" className="btn btn-outline btn-sm mb-4 rounded-3xl group hover:border-primary w-fit px-5">
                     <IoHomeOutline size={15} className='group-hover:text-primary'/>
@@ -64,7 +64,7 @@ const Introduce = () => {
                     }
                 </div> */}
             </div>
-        </div>
+        </section>
     );
 };
 

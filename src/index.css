@@ -14,3 +14,7 @@
 html{
     scroll-behavior: smooth;
 }
+
+li a.active{
+    color: #25ef7c;
+}

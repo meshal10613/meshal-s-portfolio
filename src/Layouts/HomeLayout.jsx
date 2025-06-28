@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Outlet } from 'react-router';
+import { NavLink, Outlet } from 'react-router';
 import MyProfile from '../Components/MyProfile';
 import { IoHomeOutline, IoMenu } from 'react-icons/io5';
 import { FaBriefcase} from 'react-icons/fa';
@@ -31,7 +31,6 @@ const HomeLayout = () => {
             sections.forEach((section) => observer.observe(section));
             return () => sections.forEach((section) => observer.unobserve(section));
     }, [activeSection]);
-    console.log(activeSection)
 
     return (
         <div className='flex flex-col lg:flex-row items-center gap-10 justify-between mx-5'>
