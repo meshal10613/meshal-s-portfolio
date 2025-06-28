@@ -4,13 +4,13 @@ import { FaBriefcase } from 'react-icons/fa';
 const Education = () => {
     return (
         <div id='education' className='lg:p-10 flex flex-col'>
-            <span data-aos="fade-up" data-aos-easing="ease" duration="5000" className="btn btn-outline btn-sm mb-4 rounded-3xl group hover:border-primary w-fit">
+            <span data-aos="fade-up" data-aos-easing="ease" duration="5000" className="btn btn-outline btn-sm mb-4 rounded-3xl group hover:border-primary w-fit px-5">
                 <FaBriefcase size={15} className='group-hover:text-primary'/>
                 <span>Education</span>
             </span>
 
             <div>
-                <h2 className='text-4xl md:text-5xl mb-10'>Education & <span className='text-primary'>Experience</span></h2>
+                <h2 data-aos="fade-up" data-aos-easing="ease" duration="5000" className='text-4xl md:text-5xl mb-10'>Education & <span className='text-primary'>Experience</span></h2>
 
                 <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                     <li data-aos="fade-right" data-aos-easing="ease" duration="5000" className='group'>

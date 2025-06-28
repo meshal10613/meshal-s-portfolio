@@ -4,10 +4,10 @@ import { LuUserRound } from 'react-icons/lu';
 const About = () => {
     return (
         <div id='about' className='lg:p-10 flex flex-col'>
-            <p className="btn btn-outline btn-sm mb-4 rounded-3xl group hover:border-primary">
+            <span data-aos="fade-up" data-aos-easing="ease" duration="5000" className="btn btn-outline btn-sm mb-4 rounded-3xl group hover:border-primary w-fit px-5">
                 <LuUserRound size={15} className='group-hover:text-primary'/>
                 <span>About</span>
-            </p>
+            </span>
         </div>
     );
 };

@@ -60,47 +60,47 @@ const Contact = () => {
 
     return (
         <div id='contact' className='lg:p-10'>
-            <span data-aos="fade-up" data-aos-easing="ease" duration="5000" className="btn btn-outline btn-sm mb-4 rounded-3xl group hover:border-primary w-fit">
+            <span data-aos="fade-up" data-aos-easing="ease" duration="5000" className="btn btn-outline btn-sm mb-4 rounded-3xl group hover:border-primary w-fit px-5">
                 <SlEnvolope size={15} className='group-hover:text-primary'/>
                 <span>Contact</span>
             </span>
 
             <div className=''>
                 <div className='space-y-3 mb-10'>
-                    <h2 className='text-4xl md:text-5xl mb-10'>Let's Work <span className='text-primary'>Together!</span></h2>
-                    <h2 className='flex items-center gap-2 text-xl'>+880 1764447574 <FaWhatsapp className='text-primary' size={20}/></h2>
-                    <h2 className='flex items-center gap-2 text-xl'>syedmohiuddinmeshal24@gmail.com <SiGmail size={20} className='text-primary' /></h2>
-                    <p className='text-xl flex gap-2'>Amirabad, Jhalakathi, Barisal - 8200, Bangladesh</p>
+                    <h2 data-aos="fade-up" data-aos-easing="ease" duration="5000" className='text-4xl md:text-5xl mb-10'>Let's Work <span className='text-primary'>Together!</span></h2>
+                    <h2 data-aos="fade-up" data-aos-easing="ease" duration="5000" className='flex items-center gap-2 text-xl'>+880 1764447574 <FaWhatsapp className='text-primary' size={20}/></h2>
+                    <h2 data-aos="fade-up" data-aos-easing="ease" duration="5000" className='flex items-center gap-2 text-xl'>syedmohiuddinmeshal24@gmail.com <SiGmail size={20} className='text-primary' /></h2>
+                    <p data-aos="fade-up" data-aos-easing="ease" duration="5000" className='text-xl flex gap-2'>Amirabad, Jhalakathi, Barisal - 8200, Bangladesh</p>
                 </div>
                 <div className=''>
                     <form onSubmit={handleSubmit} className='space-y-3'>
                         {/* Name & Email */}
                         <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10 w-full'>
-                            <div className='flex flex-col gap-3'>
+                            <div data-aos="fade-right" data-aos-easing="ease" duration="5000" className='flex flex-col gap-3'>
                                 <label htmlFor="Name" className='text-2xl'>Name<span className='text-primary'>*</span></label>
                                 <input type="text" name="name" value={formData.name} onChange={handleChange} id="" placeholder='Enter Your Name' className='input  rounded-3xl text-white w-full'/>
                             </div>
-                            <div className='flex flex-col gap-3'>
+                            <div data-aos="fade-left" data-aos-easing="ease" duration="5000" className='flex flex-col gap-3'>
                                 <label htmlFor="Email" className='text-2xl'>Email<span className='text-primary'>*</span></label>
                                 <input type="email" name="email" value={formData.email} onChange={handleChange} id="" placeholder='Enter Your Email' className='input rounded-3xl text-white w-full' required/>
                             </div>
                         </div>
                         {/* Phone & Subject */}
                         <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10 w-full'>
-                            <div className='flex flex-col gap-3'>
+                            <div data-aos="fade-right" data-aos-easing="ease" duration="5000" className='flex flex-col gap-3'>
                                 <label htmlFor="Phone" className='text-2xl'>Phone</label>
                                 <input type="number" name="phone" value={formData.phone} onChange={handleChange} id="" placeholder='Enter Your Phone Number' className='input  rounded-3xl text-white w-full'/>
                             </div>
-                            <div className='flex flex-col gap-3'>
+                            <div data-aos="fade-left" data-aos-easing="ease" duration="5000" className='flex flex-col gap-3'>
                                 <label htmlFor="Title" className='text-2xl'>Title</label>
                                 <input type="text" name="title" value={formData.title} onChange={handleChange} id="" placeholder='Enter Your Title' className='input rounded-3xl text-white w-full'/>
                             </div>
                         </div>
-                        <div className='flex flex-col gap-3'>
+                        <div data-aos="fade-up" data-aos-easing="ease" duration="5000" className='flex flex-col gap-3'>
                             <label htmlFor="Message" className='text-2xl'>Message<span className='text-primary'>*</span></label>
                             <input type="text" name="message" value={formData.message} onChange={handleChange} id="" placeholder='Enter Your Email' className='textarea text-white w-full' required/>
                         </div>
-                        <button type='submit' className='btn btn-block border-2 border-[#25ef7c] text-xl text-black bg-[#25ef7c] transition-all hover:text-[#25ef7c] hover:border-[#25ef7c] hover:bg-[#1f1f1f] rounded-3xl h-13 my-5'>SEND MESSAGE</button>
+                        <button data-aos="fade-up" data-aos-easing="ease" duration="5000" type='submit' className='btn btn-block border-2 border-[#25ef7c] text-xl text-black bg-[#25ef7c] transition-all hover:text-[#25ef7c] hover:border-[#25ef7c] hover:bg-[#1f1f1f] rounded-3xl h-13 my-5'>SEND MESSAGE</button>
                     </form>
                 </div>
             </div>
