@@ -8,7 +8,7 @@ import Contact from '../Components/Contact';
 
 const Home = () => {
     return (
-        <div className='flex flex-col items-start lg:px-10'>
+        <div className='flex flex-col lg:px-10'>
             <Introduce/>
             <About/>
             <Skills/>
