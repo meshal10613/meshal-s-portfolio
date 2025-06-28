@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+    themes: business --default;
+}
+
+@plugin "daisyui/theme" {
+    name: "business";
+    default: true;
+    --color-primary: #25ef7c;
+    --color-secondary: #03373D;
+    --color-accent: #ffffff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
