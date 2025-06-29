@@ -4,6 +4,7 @@ import { Link, useLoaderData } from 'react-router';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { FaGithub, FaLink } from 'react-icons/fa';
+import { FaXmark } from 'react-icons/fa6';
 
 const Projects = () => {
     const projects = useLoaderData();
@@ -30,21 +31,21 @@ const Projects = () => {
                     <div key={project.id} className='border-2 border-[#3f3f3f] p-5 md:p-10 rounded-3xl group'>
                         <Carousel autoPlay={true} interval={2000} infiniteLoop={true} showIndicators={false} showThumbs={false}>
                             <div>
-                                <img src={project.image[0]} className='rounded-3xl mb-4' />
+                                <img src={project.image[0]} className='rounded-3xl w-98 h-72 lg:h-98 mb-4 lg:mb-6' />
                                 {/* <p className="legend">Legend 1</p> */}
                             </div>
                             <div>
-                                <img src={project.image[1]} className='rounded-3xl mb-4' />
+                                <img src={project.image[1]} className='rounded-3xl w-98 h-72 lg:h-98 mb-4 lg:mb-6' />
                                 {/* <p className="legend">Legend 2</p> */}
                             </div>
                             <div>
-                                <img src={project.image[2]} className='rounded-3xl mb-4' />
+                                <img src={project.image[2]} className='rounded-3xl w-98 h-72 lg:h-98 mb-4 lg:mb-6' />
                                 {/* <p className="legend">Legend 3</p> */}
                             </div>
                         </Carousel>
                         <div className='flex items-center justify-between'>
-                            <h2 className='text-3xl font-semibold text-white group-hover:text-primary group-hover:underline'>{project.name}</h2>
-                            <Link onClick={() => handleDetails(project)} className='btn border-2 border-[#25ef7c] text-xl text-black bg-[#25ef7c] transition-all hover:text-[#25ef7c] hover:border-[#25ef7c] hover:bg-[#1f1f1f] rounded-3xl h-12 w-40'>Details</Link>
+                            <h2 className='text-2xl lg:text-3xl font-semibold text-white group-hover:text-primary group-hover:underline'>{project.name}</h2>
+                            <Link onClick={() => handleDetails(project)} className='btn border-2 border-[#25ef7c] text-xl text-black bg-[#25ef7c] transition-all hover:text-[#25ef7c] hover:border-[#25ef7c] hover:bg-[#1f1f1f] rounded-3xl h-10 w-32'>Details</Link>
                         </div>
                     </div>
                     )
@@ -55,7 +56,7 @@ const Projects = () => {
             <div className="modal-box space-y-5 group">
                 <h2 className='text-2xl text-primary'>{click?.name}</h2>
                 <p>{click?.description}</p>
-                <div className='flex gap-2'>
+                <div className='grid grid-cols-4 gap-y-3'>
                     {
                         click?.techStack !== undefined ? 
                         click?.techStack.map((tech, index) =>
@@ -82,15 +83,18 @@ const Projects = () => {
                 </div>
                 <div className="flex items-center justify-between">
                     <a href={click?.liveLink} target='_blank' className='btn'>
-                        <FaLink size={20} className='group-hover:text-[#25ef7c]' />
+                        <FaLink size={20} className='' />
                         Link
                     </a>
                     <a href={click?.githubClient} target='_blank' className='flex gap-1 items-center btn'>
-                        <FaGithub size={20} className='group-hover:text-[#25ef7c]'/>
+                        <FaGithub size={20} className=''/>
                         Github
                     </a>
                     <form method="dialog">
-                        <button className="btn">Close</button>
+                        <button className="btn flex gap-1 items-center">
+                            <FaXmark size={20} className=''/>
+                            Close
+                        </button>
                     </form>
                 </div>
             </div>

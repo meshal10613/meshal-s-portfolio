@@ -13,7 +13,7 @@ export const router = createBrowserRouter([
                 element: <Home/>,
                 loader: () => fetch("/projects.json"),
                 hydrateFallbackElement: <Loading/>
-            }
+            },
         ]
     },
 ]);
