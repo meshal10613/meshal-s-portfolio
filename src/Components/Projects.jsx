@@ -50,13 +50,13 @@ const Projects = () => {
             </div> */}
 
             <div
-                data-aos="fade-up"
-                data-aos-easing="ease"
-                data-aos-duration="5000"
                 className="grid grid-cols-1 gap-10"
                 >
                 {projects.map((project) => (
                     <div
+                    data-aos="fade-up"
+                    data-aos-easing="ease"
+                    data-aos-duration="5000"
                     key={project.id}
                     className="border-2 border-[#3f3f3f] p-5 md:p-10 rounded-3xl group bg-base-100"
                     >
