@@ -7,8 +7,8 @@
         "description": "Inlingo is a dynamic web platform designed to help users learn new languages through interactive lessons, quizzes, and real-time tutor sessions.",
         "techStack": ["React JS", "Tailwind CSS", "MongoDB", "Firebase", "Express JS", "JWT"],
         "liveLink": "https://assignment-11-inlingo.web.app/",
-        "githubClient": "https://github.com/meshal10613/hobby-hatch-client",
-        "githubServer": "https://github.com/meshal10613/hobby-hatch-server",
+        "githubClient": "https://github.com/meshal10613/inlingo-client",
+        "githubServer": "https://github.com/meshal10613/inlingo-server",
         "challenge": ["Implementing JWT", "Filtering exact data from server"],
         "futurePlans": "I will implement dashboard, Improve UI"
     },
@@ -28,14 +28,14 @@
     {
         "id": 3,
         "image": 
-        ["https://i.ibb.co/Psb2XgVK/hobby-hatch-1.png", "https://i.ibb.co/LXhcFKxf/hobby-hatch-2.png", "https://i.ibb.co/RTYJLM6h/hobby-hatch-3.png"],
+        ["https://i.ibb.co/Cp0xM0wH/Screenshot-2025-06-29-173729.png", "https://i.ibb.co/hJxRSwzn/Screenshot-2025-06-29-173740.png", "https://i.ibb.co/CsnGK1f2/Screenshot-2025-06-29-173751.png"],
         "name": "JOBORA",
-        "description": "HobbyHatch is a web platform designed to help individuals connect through shared interests by discovering, joining, or creating local hobby-based groups.",
+        "description": "Jobora is a modern, user-centric job-seeking platform designed to streamline the employment search process for job seekers while enabling employers to post and manage job listings efficiently. The platform addresses the gap between qualified candidates and quality job postings by providing a responsive, intuitive interface and smart job categorization.",
         "techStack": ["React JS", "Tailwind CSS", "Daisy UI", "Firebase"],
         "liveLink": "https://assignment-9-jobora.web.app/",
-        "githubClient": "https://github.com/meshal10613/hobby-hatch-client",
-        "githubServer": "https://github.com/meshal10613/hobby-hatch-server",
-        "challenge": ["Implementing theme", "To combine Front-end, Back-end & MongoDB"],
+        "githubClient": "https://github.com/meshal10613/jobora",
+        "githubServer": "",
+        "challenge": ["Implementing firebase", "create universal auth provider"],
         "futurePlans": "I will implement dashboard, Upgrade multi-user functionality, Integrate JWT"
     }
 ]
