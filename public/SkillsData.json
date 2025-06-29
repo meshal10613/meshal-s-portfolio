@@ -1,32 +1,82 @@
 [
-        {
-            "id": 1,
-            "logo": 9,
-            "class": "Front-end",
-            "title": "JavaScript"
-        },
-        {
-            "id": 2,
-            "logo": 8,
-            "class": "Front-end",
-            "title": "React"
-        },
-        {
-            "id": 3,
-            "logo": 7,
-            "class": "Back-end",
-            "title": "Express"
-        },
-        {
-            "id": 4,
-            "logo": 6,
-            "class": "Back-end",
-            "title": "MongoDB"
-        },
-        {
-            "id": 5,
-            "logo": 5,
-            "class": "Front-end",
-            "title": "Firebase"
-        }
-    ]
+    {
+        "logo": "https://i.ibb.co/JWjZGHN9/html-removebg-preview.png",
+        "class": "Front-end",
+        "title": "HTML5"
+    },
+    {
+        "logo": "https://i.ibb.co/gLKR9Gft/Untitled-design-removebg-preview.png",
+        "class": "Front-end",
+        "title": "CSS3"
+    },
+    {
+        "logo": "https://i.ibb.co/VYT6q2bM/images-1-removebg-preview.png",
+        "class": "Front-end",
+        "title": "Tailwind CSS"
+    },
+    {
+        "logo": "https://i.ibb.co/8LXsdxDP/png-clipart-bootstrap-logo-thumbnail-tech-companies-thumbnail-removebg-preview.png",
+        "class": "Front-end",
+        "title": "Bootstrap"
+    },
+    {
+        "logo": "https://i.ibb.co/TxwGtV4P/images-removebg-preview.png",
+        "class": "Front-end",
+        "title": "Daisy UI"
+    },
+    {
+        "logo": "https://i.ibb.co/0jnNjbB2/javascript.png",
+        "class": "Front-end",
+        "title": "JavaScript"
+    },
+    {
+        "logo": "https://i.ibb.co/HLPHCn1F/react.png",
+        "class": "Front-end",
+        "title": "React"
+    },
+    {
+        "logo": "https://i.ibb.co/bMqRjjj1/images-2-removebg-preview.png",
+        "class": "Back-end",
+        "title": "Node JS"
+    },
+    {
+        "logo": "https://i.ibb.co/TBvRp02n/express.png",
+        "class": "Back-end",
+        "title": "Express JS"
+    },
+    {
+        "logo": "https://i.ibb.co/Rpx3PtGf/mongodb.png",
+        "class": "Back-end",
+        "title": "MongoDB"
+    },
+    {
+        "logo": "https://i.ibb.co/Q3VfWmKG/firebase.png",
+        "class": "Front-end",
+        "title": "Firebase"
+    },
+    {
+        "logo": "https://i.ibb.co/G4zT89T4/images-3-removebg-preview.png",
+        "class": "Tools",
+        "title": "Git"
+    },
+    {
+        "logo": "https://i.ibb.co/whZzWqZS/github.png",
+        "class": "Tools",
+        "title": "Github"
+    },
+    {
+        "logo": "https://i.ibb.co/WNDpmnbM/postman.png",
+        "class": "Tools",
+        "title": "Postman"
+    },
+    {
+        "logo": "https://i.ibb.co/gZxYZS82/figma.png",
+        "class": "Tools",
+        "title": "Figma"
+    },
+    {
+        "logo": "https://i.ibb.co/Y70qSLv7/canva.png",
+        "class": "Tools",
+        "title": "Canva"
+    }
+]
