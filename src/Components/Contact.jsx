@@ -4,6 +4,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si';
 import { SlEnvolope } from 'react-icons/sl';
 import { Slide, toast } from 'react-toastify';
+import { FaLocationDot } from 'react-icons/fa6';
 
 // Service ID service_dddgh6r
 
@@ -67,10 +68,12 @@ const Contact = () => {
 
             <div className=''>
                 <div className='space-y-3 mb-10'>
-                    <h2 data-aos="fade-up" data-aos-easing="ease" duration="5000" className='text-4xl md:text-5xl mb-10'>Let's Work <span className='text-primary'>Together!</span></h2>
-                    <h2 data-aos="fade-up" data-aos-easing="ease" duration="5000" className='flex items-center gap-2 text-xl'>+880 1764447574 <FaWhatsapp className='text-primary' size={20}/></h2>
-                    <h2 data-aos="fade-up" data-aos-easing="ease" duration="5000" className='flex items-center gap-2 text-xl'>syedmohiuddinmeshal24@gmail.com <SiGmail size={20} className='text-primary' /></h2>
-                    <p data-aos="fade-up" data-aos-easing="ease" duration="5000" className='text-xl flex gap-2'>Amirabad, Jhalakathi, Barisal - 8200, Bangladesh</p>
+                    <h2 data-aos="fade-up" data-aos-easing="ease" duration="5000" className='text-4xl md:text-5xl mb-10 font-syne'>Let's Work <span className='text-primary'>Together!</span></h2>
+                    <a href="tel:+8801764447574" data-aos="fade-up" data-aos-easing="ease" duration="5000" className='flex items-center gap-2 text-xl hover:link-primary link-hover'>+880 1764447574 <FaWhatsapp className='text-primary' size={20}/></a>
+                    <a href="mailto:syedmohiuddinmeshal24@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer" data-aos="fade-up" data-aos-easing="ease" duration="5000" className='flex items-center gap-2 text-xl hover:link-primary link-hover'>syedmohiuddinmeshal24@gmail.com <SiGmail size={20} className='text-primary' /></a>
+                    <p data-aos="fade-up" data-aos-easing="ease" duration="5000" className='text-xl flex items-center gap-2'>Jhalakathi, Barisal, Bangladesh<FaLocationDot size={20} className='text-primary' /></p>
                 </div>
                 <div className=''>
                     <form onSubmit={handleSubmit} className='space-y-3'>

@@ -31,7 +31,7 @@ const Introduce = () => {
                     <IoHomeOutline size={15} className='group-hover:text-primary'/>
                     <span>Home</span>
                 </span>
-                <h1 data-aos="fade-up" data-aos-easing="ease" duration="5000" className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight">
+                <h1 data-aos="fade-up" data-aos-easing="ease" duration="5000" className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight font-syne">
                     Hello! I'm <span className="text-primary">Syed Mohiuddin Meshal</span>,<br />
                     <span>
                     {/* Style will be inherited from the parent element */}

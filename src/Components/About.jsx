@@ -9,7 +9,7 @@ const About = () => {
                 <span>About</span>
             </span>
 
-            <h2 data-aos="fade-up" data-aos-easing="ease" duration="5000" className='text-4xl md:text-5xl mb-10'>More Than Code — <br /> A Passion for <span className='text-primary'>Progress</span></h2>
+            <h2 data-aos="fade-up" data-aos-easing="ease" duration="5000" className='text-4xl md:text-5xl mb-10 font-syne'>More Than Code — <br /> A Passion for <span className='text-primary'>Progress</span></h2>
 
             <p className='text-gray-400'>Hello! My name is Syed Mohiuddin Meshal, and I’m a passionate and dedicated person who loves technology, problem-solving, and the continuous process of learning and growing through code. My journey into programming began with curiosity and quickly evolved into a deep passion for creating meaningful digital solutions.</p>
             <br />

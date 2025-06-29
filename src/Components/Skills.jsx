@@ -36,9 +36,9 @@ const Skills = () => {
                 <span>My Skills</span>
             </span>
 
-            <h2 data-aos="fade-up" data-aos-easing="ease" duration="5000" className='text-4xl md:text-5xl mb-10'>My <span className='text-primary'>Advantages</span></h2>
+            <h2 data-aos="fade-up" data-aos-easing="ease" duration="5000" className='text-4xl md:text-5xl mb-10 font-syne'>My <span className='text-primary'>Advantages</span></h2>
 
-            <div data-aos="fade-up" data-aos-easing="ease" duration="5000" className='flex items-center justify-center gap-5 skill'>
+            <div data-aos="fade-up" data-aos-easing="ease" duration="5000" className='flex items-center justify-center gap-3 md:gap-5 skill'>
                 {
                     techP.map((t, index) => 
                         <button key={index} onClick={() => setClick(t.name)} className={`btn transition-all hover:bg-primary hover:text-black rounded-3xl 

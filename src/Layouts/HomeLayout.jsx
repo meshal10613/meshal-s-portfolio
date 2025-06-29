@@ -31,7 +31,7 @@ const HomeLayout = () => {
     // }, []);
 
     return (
-        <div className='flex flex-col lg:flex-row items-center gap-10 justify-between mx-5'>
+        <div className='flex flex-col lg:flex-row items-center gap-10 justify-between md:mx-5'>
             {/* <div className='w-full flex md:block md:fixed md:top-0 md:left-5 m-1'> */}
             <div className='w-full md:w-80 lg:fixed lg:top-0 lg:left-5 lg:h-screen flex flex-col items-center justify-between'>
                 <MyProfile/>

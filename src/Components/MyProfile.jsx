@@ -1,11 +1,11 @@
 import React from 'react';
-import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaDownload, FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { FaSquareXTwitter } from 'react-icons/fa6';
 import { Link } from 'react-router';
 
 const MyProfile = () => {
     return (
-        <div className='w-98 border-2 border-[#3f3f3f] rounded-3xl mx-auto mt-10 lg:my-20 p-10'>
+        <div className='w-fit md:w-98 border-2 border-[#3f3f3f] rounded-3xl mx-auto mt-5 px-10 pb-10'>
             <div>
                 <div className='flex justify-between items-center'>
                     <Link to="/" className='w-40 cursor-pointer'><img src="/meshal-logo.png" alt="" className='w-40'/></Link>
@@ -39,7 +39,7 @@ const MyProfile = () => {
                     </a>
                 </div>
                 <div>
-                    <a href="/public/Meshal.pdf" download={true} className='btn btn-block border-2 border-[#25ef7c] text-xl text-black bg-[#25ef7c] transition-all hover:text-[#25ef7c] hover:border-[#25ef7c] hover:bg-[#1f1f1f] rounded-3xl h-13'>RESUME</a>
+                    <a href="/public/Meshal.pdf" download={true} className='btn btn-block border-2 border-[#25ef7c] text-xl text-black bg-[#25ef7c] transition-all hover:text-[#25ef7c] hover:border-[#25ef7c] hover:bg-[#1f1f1f] rounded-3xl h-13'><FaDownload />RESUME</a>
                 </div>
             </div>
         </div>

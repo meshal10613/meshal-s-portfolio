@@ -10,7 +10,7 @@ const Education = () => {
             </span>
 
             <div>
-                <h2 data-aos="fade-up" data-aos-easing="ease" duration="5000" className='text-4xl md:text-5xl mb-10'>Education & <span className='text-primary'>Experience</span></h2>
+                <h2 data-aos="fade-up" data-aos-easing="ease" duration="5000" className='text-4xl md:text-5xl mb-10 font-syne'>Education & <span className='text-primary'>Experience</span></h2>
 
                 <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                     <li data-aos="fade-right" data-aos-easing="ease" duration="5000" className='group'>

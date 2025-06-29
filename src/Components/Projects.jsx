@@ -23,24 +23,21 @@ const Projects = () => {
                 <span>Projects</span>
             </span>
 
-            <h2 data-aos="fade-up" data-aos-easing="ease" duration="5000" className='text-4xl md:text-5xl mb-10'>Featured <span className='text-primary'>Projects</span></h2>
+            <h2 data-aos="fade-up" data-aos-easing="ease" duration="5000" className='text-4xl md:text-5xl mb-10 font-syne'>Featured <span className='text-primary'>Projects</span></h2>
 
-            <div data-aos="fade-up" data-aos-easing="ease" duration="5000" className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
+            {/* <div data-aos="fade-up" data-aos-easing="ease" duration="5000" className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
                 {
                     projects.map(project => 
                     <div key={project.id} className='border-2 border-[#3f3f3f] p-5 md:p-10 rounded-3xl group'>
                         <Carousel autoPlay={true} interval={2000} infiniteLoop={true} showIndicators={false} showThumbs={false}>
                             <div>
                                 <img src={project.image[0]} className='rounded-3xl w-98 h-72 lg:h-98 mb-4 lg:mb-6' />
-                                {/* <p className="legend">Legend 1</p> */}
                             </div>
                             <div>
                                 <img src={project.image[1]} className='rounded-3xl w-98 h-72 lg:h-98 mb-4 lg:mb-6' />
-                                {/* <p className="legend">Legend 2</p> */}
                             </div>
                             <div>
                                 <img src={project.image[2]} className='rounded-3xl w-98 h-72 lg:h-98 mb-4 lg:mb-6' />
-                                {/* <p className="legend">Legend 3</p> */}
                             </div>
                         </Carousel>
                         <div className='flex items-center justify-between'>
@@ -50,13 +47,64 @@ const Projects = () => {
                     </div>
                     )
                 }
+            </div> */}
+
+            <div
+                data-aos="fade-up"
+                data-aos-easing="ease"
+                data-aos-duration="5000"
+                className="grid grid-cols-1 gap-10"
+                >
+                {projects.map((project) => (
+                    <div
+                    key={project.id}
+                    className="border-2 border-[#3f3f3f] p-5 md:p-10 rounded-3xl group bg-base-100"
+                    >
+                        <div className="flex flex-col lg:flex-row items-center gap-8">
+                            <div className="w-full lg:w-1/2">
+                            <Carousel
+                                autoPlay
+                                interval={2000}
+                                infiniteLoop
+                                showIndicators={false}
+                                showThumbs={false}
+                            >
+                                {project.image.map((img, index) => (
+                                <div key={index}>
+                                    <img
+                                    src={img}
+                                    alt={`Slide ${index + 1}`}
+                                    className="rounded-3xl w-full h-72 object-cover"
+                                    />
+                                </div>
+                                ))}
+                            </Carousel>
+                            </div>
+
+                            <div className="w-full lg:w-1/2 flex flex-col justify-between h-full">
+                            <h2 className="text-2xl lg:text-3xl font-semibold text-white group-hover:text-primary group-hover:underline mb-3">
+                                {project.name}
+                            </h2>
+                            <p className="text-gray-400 text-justify mb-5">{project.description}</p>
+                            <div>
+                                <Link
+                                onClick={() => handleDetails(project)}
+                                className="btn border-2 border-[#25ef7c] text-lg text-black bg-[#25ef7c] transition-all hover:text-[#25ef7c] hover:border-[#25ef7c] hover:bg-[#1f1f1f] rounded-3xl h-10 w-32"
+                                >
+                                Details
+                                </Link>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                ))}
             </div>
 
             <dialog id="modal" className="modal">
             <div className="modal-box space-y-5 group">
                 <h2 className='text-2xl text-primary'>{click?.name}</h2>
                 <p>{click?.description}</p>
-                <div className='grid grid-cols-4 gap-y-3'>
+                <div className='grid grid-cols-3 md:grid-cols-4 gap-y-3'>
                     {
                         click?.techStack !== undefined ? 
                         click?.techStack.map((tech, index) =>
