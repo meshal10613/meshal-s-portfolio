@@ -101,7 +101,7 @@ const Contact = () => {
                         </div>
                         <div data-aos="fade-up" data-aos-easing="ease" duration="5000" className='flex flex-col gap-3'>
                             <label htmlFor="Message" className='text-2xl'>Message<span className='text-primary'>*</span></label>
-                            <input type="text" name="message" value={formData.message} onChange={handleChange} id="" placeholder='Enter Your Email' className='textarea text-white w-full' required/>
+                            <input type="text" name="message" value={formData.message} onChange={handleChange} id="" placeholder='Enter Your Message' className='textarea text-white w-full' required/>
                         </div>
                         <button data-aos="fade-up" data-aos-easing="ease" duration="5000" type='submit' className='btn btn-block border-2 border-[#25ef7c] text-xl text-black bg-[#25ef7c] transition-all hover:text-[#25ef7c] hover:border-[#25ef7c] hover:bg-[#1f1f1f] rounded-3xl h-13 my-5'>SEND MESSAGE</button>
                     </form>
