@@ -39,7 +39,7 @@ const MyProfile = () => {
                     </a>
                 </div>
                 <div>
-                    <a href="/public/Meshal.pdf" download className='btn btn-block border-2 border-[#25ef7c] text-xl text-black bg-[#25ef7c] transition-all hover:text-[#25ef7c] hover:border-[#25ef7c] hover:bg-[#1f1f1f] rounded-3xl h-13'><FaDownload />RESUME</a>
+                    <a href="https://drive.google.com/file/d/18THsaLE7Pv_TyffhlcFY0Q2pM_Hwg8tA/view?usp=drive_link" target='_blank' className='btn btn-block border-2 border-[#25ef7c] text-xl text-black bg-[#25ef7c] transition-all hover:text-[#25ef7c] hover:border-[#25ef7c] hover:bg-[#1f1f1f] rounded-3xl h-13'><FaDownload />RESUME</a>
                 </div>
             </div>
         </div>
