@@ -27,7 +27,7 @@ const Skills = () => {
             setSkills(skillsP);
             return;
         }
-    }, [click]);
+    }, [click, skills]);
 
     return (
         <section id='skills' className='p-5 lg:p-10 flex flex-col spy-section'>
@@ -49,17 +49,9 @@ const Skills = () => {
 
             <div className=" text-white p-6 md:p-12">
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10">
-                    {/* {
-                        skills.map(skill => 
-                            <div key={skill.id} className="flex flex-col justify-center items-center gap-3 border-2 border-[#3f3f3f] rounded-full py-3 group hover:border-primary w-40 h-40">
-                            <img src={skill.logo} alt="" className='w-20'/>
-                            <h2 className='text-gray-400 group-hover:text-white'>{skill.title}</h2>
-                        </div>
-                        )
-                    } */}
                     {
-                        skills.map(skill => 
-                            <div data-aos="fade-up" data-aos-easing="ease" duration="5000" key={skill.id} className="flex justify-center items-center gap-3 border-2 border-[#3f3f3f] rounded-md py-3 group hover:border-primary w-40 h-20">
+                        skills.map((skill, index) => 
+                            <div data-aos="fade-up" data-aos-easing="ease" duration="5000" key={index} className="flex justify-center items-center gap-3 border-2 border-[#3f3f3f] rounded-md py-3 group hover:border-primary w-40 h-20">
                                 <img src={skill.logo} alt="" className='w-8'/>
                                 <h2 className='text-gray-400 group-hover:text-white'>{skill.title}</h2>
                             </div>

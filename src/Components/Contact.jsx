@@ -5,6 +5,7 @@ import { SiGmail } from 'react-icons/si';
 import { SlEnvolope } from 'react-icons/sl';
 import { Slide, toast } from 'react-toastify';
 import { FaLocationDot } from 'react-icons/fa6';
+import GitHubCommits from './GitHubCommits';
 
 // Service ID service_dddgh6r
 
@@ -106,6 +107,9 @@ const Contact = () => {
                         <button data-aos="fade-up" data-aos-easing="ease" duration="5000" type='submit' className='btn btn-block border-2 border-[#25ef7c] text-xl text-black bg-[#25ef7c] transition-all hover:text-[#25ef7c] hover:border-[#25ef7c] hover:bg-[#1f1f1f] rounded-3xl h-13 my-5'>SEND MESSAGE</button>
                     </form>
                 </div>
+            </div>
+            <div>
+                <GitHubCommits/>
             </div>
         </section>
     );

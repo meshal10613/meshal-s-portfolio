@@ -31,7 +31,7 @@ const Introduce = () => {
                     <IoHomeOutline size={15} className='group-hover:text-primary'/>
                     <span>Home</span>
                 </span>
-                <h1 data-aos="fade-up" data-aos-easing="ease" duration="5000" className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight font-syne">
+                <h1 data-aos="fade-up" data-aos-easing="ease" duration="5000" className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight font-syne mb-10">
                     Hello! I'm <span className="text-primary">Syed Mohiuddin Meshal</span>,<br />
                     <span>
                     {/* Style will be inherited from the parent element */}
@@ -46,10 +46,13 @@ const Introduce = () => {
                     />
                     </span>
                 </h1>
-                <p data-aos="fade-up" data-aos-easing="ease" duration="5000" className="text-gray-400 mt-4 max-w-xl">
+                {/* <p data-aos="fade-up" data-aos-easing="ease" duration="5000" className="text-gray-400 mt-4 max-w-xl">
                     My goal is to bridge the gap between design and development with clean, scalable code.
+                </p> */}
+                <p data-aos="fade-up" data-aos-easing="ease" duration="5000" className="text-gray-400 mb-10 max-w-xl">
+                    My goal is to bridge the gap between design and development with clean, scalable code. I strive to create intuitive user experiences by combining aesthetic design with robust functionality. With a strong focus on performance and maintainability, I’m always learning and adapting to build better solutions for real-world problems.
                 </p>
-                <a data-aos="fade-up" data-aos-easing="ease" duration="5000" href="#contact" className='btn border-2 border-[#25ef7c] text-xl text-black bg-[#25ef7c] transition-all hover:text-[#25ef7c] hover:border-[#25ef7c] hover:bg-[#1f1f1f] rounded-3xl h-10 w-40 my-5'>Let's Talk</a>
+                <a data-aos="fade-up" data-aos-easing="ease" duration="5000" href="#contact" className='btn border-2 border-[#25ef7c] text-xl text-black bg-[#25ef7c] transition-all hover:text-[#25ef7c] hover:border-[#25ef7c] hover:bg-[#1f1f1f] rounded-3xl h-10 w-40 mb-10'>Let's Talk</a>
 
                 {/* <div className='flex justify-around items-center my-10 lg:my-20'>
                     {

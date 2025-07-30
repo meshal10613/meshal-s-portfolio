@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Outlet } from 'react-router';
 import MyProfile from '../Components/MyProfile';
 import { IoHomeOutline, IoMenu } from 'react-icons/io5';
@@ -11,24 +11,36 @@ import { TbIcons } from 'react-icons/tb';
 const HomeLayout = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [activeSection, setActiveSection] = useState("home");
-    //     const sections = document.querySelectorAll("section.spy-section");
 
-    //     const observer = new IntersectionObserver(
-    //         (entries) => {
-    //             entries.forEach((entry) => {
-    //                 if (entry.isIntersecting) {
-    //                     setActiveSection(entry.target.id);
-    //                 }
-    //             });
-    //         },
-    //         {
-    //             threshold: 0.6, // Trigger when 60% of the section is visible
-    //         }
-    //         );
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            const sections = document.querySelectorAll("section.spy-section");
 
-    //         sections.forEach((section) => observer.observe(section));
-    //         return () => sections.forEach((section) => observer.unobserve(section));
-    // }, []);
+            if (sections.length === 0) {
+            console.warn("No sections found with class 'spy-section'");
+            return;
+            }
+
+            const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    setActiveSection(entry.target.id);
+                }
+                });
+            },
+            { threshold: 0.6 }
+            );
+
+            sections.forEach((section) => observer.observe(section));
+
+            return () => {
+            sections.forEach((section) => observer.unobserve(section));
+            };
+        }, 100); // wait for DOM to render
+
+        return () => clearTimeout(timeout);
+    }, []);
 
     return (
         <div className='flex flex-col lg:flex-row items-center gap-10 justify-between md:mx-5'>
