@@ -18,7 +18,7 @@ const GitHubCommits = () => {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
     return (
-        <div className="w-[60%] md:w-[80%] lg:w-fit mx-auto overflow-x-auto">
+        <div data-aos="fade-up" data-aos-easing="ease" duration="5000" className="w-[60%] md:w-[80%] lg:w-fit mx-auto overflow-x-auto">
             <div className="card bg-[#3f3f3f] shadow-md p-4 mx-auto w-fit">
                 <GitHubCalendar
                 username={userName}

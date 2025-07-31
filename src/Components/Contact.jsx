@@ -108,9 +108,9 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
-            <div>
+            {/* <div className='mt-10'>
                 <GitHubCommits/>
-            </div>
+            </div> */}
         </section>
     );
 };

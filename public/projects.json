@@ -1,6 +1,19 @@
 [
-    {
+        {
         "id": 1,
+        "image": 
+        ["https://i.ibb.co/99sLG8xS/Screenshot-2025-07-31-214710.png", "https://i.ibb.co/2Gd2wMV/Screenshot-2025-07-31-214700.png", "https://i.ibb.co/DDR6kn03/Screenshot-2025-07-31-214726.png"],
+        "name": "Scholara",
+        "description": "Scholara is a full-featured scholarship management system that helps students discover, apply and track scholarships from various universities around the world.",
+        "techStack": ["React JS", "Tailwind CSS", "Daisy UI", "MongoDB", "Firebase", "Node JS", "Stripe", "Express JS", "JWT"],
+        "liveLink": "https://scholara-68d67.web.app/",
+        "githubClient": "https://github.com/meshal10613/scholara-client",
+        "githubServer": "https://github.com/meshal10613/scholara-server",
+        "challenge": ["Implementing Stripe"],
+        "futurePlans": "Update user's profile through update profile page and will add SSL Commerz"
+    },
+    {
+        "id": 2,
         "image": 
         ["https://i.ibb.co/1Y7p3KYy/Screenshot-2025-06-29-103239.png", "https://i.ibb.co/nqNLwQRd/Screenshot-2025-06-29-103344.png", "https://i.ibb.co/93Gy6Lvp/Screenshot-2025-06-29-103712.png"],
         "name": "Inlingo",
@@ -13,7 +26,7 @@
         "futurePlans": "I will implement dashboard, Improve UI"
     },
     {
-        "id": 2,
+        "id": 3,
         "image": 
         ["https://i.ibb.co/Psb2XgVK/hobby-hatch-1.png", "https://i.ibb.co/LXhcFKxf/hobby-hatch-2.png", "https://i.ibb.co/RTYJLM6h/hobby-hatch-3.png"],
         "name": "Hobby Hatch",
@@ -26,7 +39,7 @@
         "futurePlans": "I will implement dashboard, Upgrade multi-user functionality, Integrate JWT"
     },
     {
-        "id": 3,
+        "id": 4,
         "image": 
         ["https://i.ibb.co/Cp0xM0wH/Screenshot-2025-06-29-173729.png", "https://i.ibb.co/hJxRSwzn/Screenshot-2025-06-29-173740.png", "https://i.ibb.co/CsnGK1f2/Screenshot-2025-06-29-173751.png"],
         "name": "JOBORA",
