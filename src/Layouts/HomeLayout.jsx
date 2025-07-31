@@ -17,25 +17,25 @@ const HomeLayout = () => {
             const sections = document.querySelectorAll("section.spy-section");
 
             if (sections.length === 0) {
-            console.warn("No sections found with class 'spy-section'");
-            return;
+                console.warn("No sections found with class 'spy-section'");
+                return;
             }
 
             const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    setActiveSection(entry.target.id);
-                }
-                });
-            },
-            { threshold: 0.6 }
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            setActiveSection(entry.target.id);
+                        }
+                    });
+                },
+                { threshold: 0.1 }
             );
 
             sections.forEach((section) => observer.observe(section));
 
             return () => {
-            sections.forEach((section) => observer.unobserve(section));
+                sections.forEach((section) => observer.unobserve(section));
             };
         }, 100); // wait for DOM to render
 
