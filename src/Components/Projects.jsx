@@ -81,19 +81,17 @@ const Projects = () => {
                             </Carousel>
                             </div>
 
-                            <div className="w-full lg:w-1/2 flex flex-col justify-between h-full">
-                            <h2 className="text-2xl lg:text-3xl font-semibold text-white group-hover:text-primary group-hover:underline mb-3">
-                                {project.name}
-                            </h2>
-                            <p className="text-gray-400 text-justify mb-5">{project.description}</p>
-                            <div>
+                            <div className="w-full lg:w-1/2 flex flex-col justify-between items-center lg:items-baseline h-full">
+                                <h2 className="text-2xl lg:text-3xl font-semibold text-white group-hover:text-primary group-hover:underline mb-3">
+                                    {project.name}
+                                </h2>
+                                <p className="text-gray-400 text-justify mb-5">{project.description}</p>
                                 <Link
                                 onClick={() => handleDetails(project)}
-                                className="btn border-2 border-[#25ef7c] text-lg text-black bg-[#25ef7c] transition-all hover:text-[#25ef7c] hover:border-[#25ef7c] hover:bg-[#1f1f1f] rounded-3xl h-10 w-32"
+                                className="btn btn-block lg:w-32 border-2 border-[#25ef7c] text-lg text-black bg-[#25ef7c] transition-all hover:text-[#25ef7c] hover:border-[#25ef7c] hover:bg-[#1f1f1f] rounded-3xl h-10"
                                 >
                                 Details
                                 </Link>
-                            </div>
                             </div>
                         </div>
                     </div>
