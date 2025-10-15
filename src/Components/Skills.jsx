@@ -7,27 +7,36 @@ const skillsPromise = fetch("/SkillsData.json").then(res => res.json())
 const Skills = () => {
     const techP = use(techPromise);
     const skillsP = use(skillsPromise);
+    const removeS = skillsP.filter(s => 
+        s.title !== "Redux" && 
+        s.title !== "TypeScript" &&
+        s.title !== "Nginx" &&
+        s.title !== "AWS" &&
+        s.title !== "Docker" &&
+        s.title !== "Mongoose" &&
+        s.title !== "Postgres"
+    );
     const [click, setClick] = useState("All");
-    const [skills, setSkills] = useState(skillsP);
+    const [skills, setSkills] = useState(removeS);
 
     useEffect(() => {
-        if(click == "Front-end"){
-            const newTech = skillsP.filter((p) => p.class === "Front-end");
+        if(click === "Front-end"){
+            const newTech = removeS.filter((p) => p.class === "Front-end");
             setSkills(newTech);
             return;
-        }else if(click == "Back-end"){
-            const newTech = skillsP.filter((p) => p.class === "Back-end");
+        }else if(click === "Back-end"){
+            const newTech = removeS.filter((p) => p.class === "Back-end");
             setSkills(newTech);
             return;
-        }else if(click == "Tools"){
-            const newTech = skillsP.filter((p) => p.class === "Tools");
+        }else if(click === "Tools"){
+            const newTech = removeS.filter((p) => p.class === "Tools");
             setSkills(newTech);
             return;
         }else{
-            setSkills(skillsP);
+            setSkills(removeS);
             return;
         }
-    }, [click, skills]);
+    }, [click, skills, removeS]);
 
     return (
         <section id='skills' className='p-5 lg:p-10 flex flex-col spy-section'>

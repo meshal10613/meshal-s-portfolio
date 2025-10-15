@@ -35,7 +35,7 @@ const Education = () => {
                         </div>
                         <hr />
                     </li>
-                    {/* <li data-aos="fade-left" data-aos-easing="ease" duration="5000" className='group'>
+                    <li data-aos="fade-left" data-aos-easing="ease" duration="5000" className='group'>
                         <hr />
                         <div className="timeline-middle group-hover:text-primary">
                         <svg
@@ -57,7 +57,7 @@ const Education = () => {
                         <p className='text-gray-400'>Completed Secondary School Certificate (SSC) in science department, achieving an excellent GPA of 4.89 out of 5.00. This academic phase laid the groundwork for my analytical thinking and nurtured my curiosity in technology and logical problem-solving. My achievements reflect a strong commitment to learning and an early inclination toward the IT field.</p>
                         </div>
                         <hr />
-                    </li> */}
+                    </li>
                 </ul>
             </div>
         </section>

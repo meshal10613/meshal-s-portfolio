@@ -40,6 +40,16 @@
         "title": "NEXT.JS"
     },
     {
+        "logo": "https://i.ibb.co.com/NnHrYrF7/redux-bg.png",
+        "class": "Front-end",
+        "title": "Redux"
+    },
+    {
+        "logo": "https://i.ibb.co.com/35RXNBFm/typescript-bg.png",
+        "class": "Front-end",
+        "title": "TypeScript"
+    },
+    {
         "logo": "https://i.ibb.co/bMqRjjj1/images-2-removebg-preview.png",
         "class": "Back-end",
         "title": "Node JS"
@@ -50,13 +60,43 @@
         "title": "Express JS"
     },
     {
+        "logo": "https://i.ibb.co.com/KpNr5CmG/nginx.png",
+        "class": "Back-end",
+        "title": "Nginx"
+    },
+    {
+        "logo": "https://i.ibb.co.com/gF3bJLCD/AWS-logo.png",
+        "class": "Back-end",
+        "title": "AWS"
+    },
+    {
+        "logo": "https://i.ibb.co.com/23qtk2sQ/4844483.png",
+        "class": "Back-end",
+        "title": "Docker"
+    },
+    {
         "logo": "https://i.ibb.co/Rpx3PtGf/mongodb.png",
         "class": "Back-end",
         "title": "MongoDB"
     },
     {
+        "logo": "https://i.ibb.co.com/7NdsH0zG/prisma.png",
+        "class": "Back-end",
+        "title": "Prisma"
+    },
+    {
+        "logo": "https://i.ibb.co.com/SXdPPRL2/Mongoose.png",
+        "class": "Back-end",
+        "title": "Mongoose"
+    },
+    {
+        "logo": "https://i.ibb.co.com/yFrNcGTk/Untitled-design-1.png",
+        "class": "Back-end",
+        "title": "Postgres"
+    },
+    {
         "logo": "https://i.ibb.co/Q3VfWmKG/firebase.png",
-        "class": "Front-end",
+        "class": "Back-end",
         "title": "Firebase"
     },
     {
